@@ -1,0 +1,8 @@
+int hammingDistance(int x, int y) {
+    int cnt = 0, num = x ^ y;
+    while (num) {
+        cnt += (num & 1);
+        num >>= 1;
+    }
+    return cnt;
+}
